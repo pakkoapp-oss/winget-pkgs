@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: PavloRybchenko.PakkoCLI
+PackageVersion: 1.6.0
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: pakko.exe
+ArchiveBinariesDependOnPath: true
+Commands:
+- pakko
+ReleaseDate: 2026-09-30
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/pakkoapp-oss/pakko/releases/download/v1.6.0/pakko-win-x64.zip
+  InstallerSha256: 7B386FDEEA1336FC631CE1C45D6829C9D74065CFD94E5B89A067733E28396CC6
+- Architecture: arm64
+  InstallerUrl: https://github.com/pakkoapp-oss/pakko/releases/download/v1.6.0/pakko-win-arm64.zip
+  InstallerSha256: C35CC59D9E29B3D10297D5B3EFCFF70887FF6D6919EC31B831B954EC77A48000
+ManifestType: installer
+ManifestVersion: 1.12.0
